@@ -9,86 +9,134 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>Tech book club</title>
 </head>
 
 <body>
 
-  Join the ultimate tech book club
+  <main>
+    <section class="main__container-one">
+      <div class="container-one__logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="container-one__text">
+        <h1 class="container-one__text-title">Join the ultimate tech book club</h1>
+        <p class="container-one__text-description">
+          Turn your reading time into learning time with fellow tech enthusiasts.
+          Get curated recommendations, join vibrant discussions, and level up your
+          skills one chapter at a time.
+        </p>
+      </div>
+      <div class="container-one__cta">
+        <a href="#" class="container-one__cta-button">
+          Review membership options
+          <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+        </a>
+        <div class="container-one__testimonial">
+          <div class="container-one__testimonial-img">
+            <img src="./images/image-avatars.webp" alt="image-avatars">
+          </div>
+          <div class="container-one__testimonial-rating">
+            <div class="container-one__testimonial-rating-stars">
+              <img src="./images/icon-star.svg" alt="icon-star">
+              <img src="./images/icon-star.svg" alt="icon-star">
+              <img src="./images/icon-star.svg" alt="icon-star">
+              <img src="./images/icon-star.svg" alt="icon-star">
+              <img src="./images/icon-star.svg" alt="icon-star">
+            </div>
+            <p class="container-one__testimonial-rating-text">200+ developers joined already</p>
+          </div>
+        </div>
+      </div>
+      <picture class="container-one__img">
+        <source media="(min-width: 1440px)" srcset="./images/image-hero-desktop.webp">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="./images/image-hero-tablet.webp">
+        <source media="(max-width: 375px)" srcset="./images/image-hero-mobile.webp">
+        <img src="./images/image-hero-mobile.webp" alt="image-hero">
+      </picture>
+    </section>
 
-  Turn your reading time into learning time with fellow tech enthusiasts.
-  Get curated recommendations, join vibrant discussions, and level up your
-  skills one chapter at a time.
+    <section class="main__container-two">
+      <h2 class="container-two__title">Read together, grow together</h2>
+      <ul class="container-two__list">
+        <li class="container-two__list-item">
+          <img src="./images/icon-check.svg" alt="icon-check">
+          Monthly curated tech reads selected by industry experts
+        </li>
+        <li class="container-two__list-item">
+          <img src="./images/icon-check.svg" alt="icon-check">
+          Virtual and in-person meetups for deep-dive discussions
+        </li>
+        <li class="container-two__list-item">
+          <img src="./images/icon-check.svg" alt="icon-check">
+          Early access to new tech book releases
+        </li>
+        <li class="container-two__list-item">
+          <img src="./images/icon-check.svg" alt="icon-check">
+          Author Q&A sessions with tech thought leaders
+        </li>
+      </ul>
+      <picture class="container-two__img">
+        <source media="(min-width: 1440px)" srcset="./images/image-read-together-desktop.webp">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="./images/image-read-together-tablet.webp">
+        <source media="(max-width: 375px)" srcset="./images/image-read-together-mobile.webp">
+        <img src="./images/image-read-together-mobile.webp" alt="image-read-together">
+      </picture>
+    </section>
 
-  Review membership options
-  200+ developers joined already
+    <section class="main__container_three">
+      <h3>Not your average book club</h3>
+      <p>
+        Connect with a community that speaks your language - from <b>Python</b> to <b>TypeScript</b> and
+        everything in between. Our discussions blend technical depth with practical applications.
+      </p>
+    </section>
 
-  Read together, grow together
+    <section class="main__reading-journey">
+      Your tech reading journey
+      1
+      Choose your membership tier
+      2
+      Get your monthly book selection
+      3
+      Join our discussion forums
+      4
+      Attend exclusive meetups
+    </section>
+    <section class="main__membership">
+      Membership options
+      Starter
+      $19/month
+      1 book/month
+      Online forums
+      Subscribe now
+      Pro
+      $29/month
+      2 books/month
+      Virtual meetups
+      Subscribe now
+      Enterprise
+      Custom
+      Team access
+      Private sessions
+      Talk to us
+    </section>
+    <section class="main__testimonial">
+      "This book club transformed my technical reading from a solitary
+      activity into an enriching community experience. The discussions
+      are gold!"
+      Sarah Chen, Software Architect
+    </section>
+  </main>
 
-  Monthly curated tech reads selected by industry experts
-  Virtual and in-person meetups for deep-dive discussions
-  Early access to new tech book releases
-  Author Q&A sessions with tech thought leaders
-
-  Not your average book club
-
-  Connect with a community that speaks your language - from Python to TypeScript and
-  everything in between. Our discussions blend technical depth with practical applications.
-
-  Your tech reading journey
-
-  1
-  Choose your membership tier
-
-  2
-  Get your monthly book selection
-
-  3
-  Join our discussion forums
-
-  4
-  Attend exclusive meetups
-
-  Membership options
-
-  Starter
-  $19/month
-
-  1 book/month
-  Online forums
-
-  Subscribe now
-
-  Pro
-  $29/month
-
-  2 books/month
-  Virtual meetups
-
-  Subscribe now
-
-  Enterprise
-  Custom
-
-  Team access
-  Private sessions
-
-  Talk to us
-
-  "This book club transformed my technical reading from a solitary
-  activity into an enriching community experience. The discussions
-  are gold!"
-
-  Sarah Chen, Software Architect
-
-  Ready to debug your reading list?
-
-  Review membership options
-  200+ developers joined already
-
-  © 2024 - Tech Book Club
+  <footer>
+    Ready to debug your reading list?
+    Review membership options
+    200+ developers joined already
+    © 2024 - Tech Book Club
+  </footer>
 
 </body>
 
