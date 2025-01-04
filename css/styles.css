@@ -426,7 +426,7 @@ body {
     margin-right: 8px;
 }
 
-hr {
+.membership__option-hr {
     border: 1px solid var(--color-neutral-200);
     margin-bottom: 24px;
 }
@@ -470,6 +470,7 @@ hr {
 
 .main__testimonial {
     padding: 64px 16px 0;
+    margin-bottom: 64px;
 }
 
 .testimonial__ratings {
@@ -494,4 +495,92 @@ hr {
     line-height: var(--text-preset-5-line-height);
     letter-spacing: var(--text-preset-5-letter-spacing);
     color: var(--color-neutral-700);
+}
+
+footer {
+    padding: 48px 16px 0;
+    background-image: url(../images/pattern-dark-bg.svg);
+    background-repeat: no-repeat;
+    background-color: var(--color-neutral-900);
+    border-radius: 16px 16px 0 0;
+}
+
+.footer__title {
+    font-size: var(--text-preset-2-mobile);
+    font-weight: var(--text-preset-2-semibold);
+    line-height: var(--text-preset-2-line-height);
+    letter-spacing: var(--text-preset-2-letter-spacing);
+    color: var(--color-neutral-100);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: var(--text-preset-6-mobile);
+    font-weight: var(--text-preset-6-semibold);
+    line-height: var(--text-preset-6-line-height);
+    letter-spacing: var(--text-preset-6-letter-spacing);
+    color: var(--color-neutral-100);
+    text-transform: uppercase;
+    border: 2px solid var(--color-neutral-100);
+    border-radius: 8px;
+    padding: 21.5px 0;
+    margin-bottom: 24px;
+}
+
+.footer__testimonial {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 64px;
+}
+
+.footer__testimonial-img {
+    width: 110px;
+}
+
+.footer__testimonial-rating {
+    width: 221px;
+}
+
+.footer__testimonial-rating-stars {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.footer__testimonial-rating-text {
+    font-size: var(--text-preset-7-mobile);
+    font-weight: var(--text-preset-7-regular);
+    line-height: var(--text-preset-7-line-height);
+    letter-spacing: var(--text-preset-7-letter-spacing);
+    color: var(--color-neutral-100);
+}
+
+.footer__hr {
+    border: 1px solid var(--color-neutral-700);
+}
+
+.footer__content {
+    padding: 24px 32px;
+}
+
+.footer__content-text {
+    font-size: var(--text-preset-7-mobile);
+    font-weight: var(--text-preset-7-regular);
+    line-height: var(--text-preset-7-line-height);
+    letter-spacing: var(--text-preset-7-letter-spacing);
+    color: var(--color-neutral-100);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer__content-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
