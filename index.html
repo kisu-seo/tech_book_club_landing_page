@@ -86,16 +86,25 @@
       </picture>
     </section>
 
-    <section class="main__container_three">
-      <h3>Not your average book club</h3>
-      <p>
-        Connect with a community that speaks your language - from <b>Python</b> to <b>TypeScript</b> and
+    <section class="main__container-three">
+      <h3 class="container-three__title">Not your average book club</h3>
+
+      <img src="./images/pattern-circle.png" alt="pattern-circle" class="container-three__circle-img">
+      <p class=" container-three__description">
+        Connect with a community that speaks your language - from <span class="container-three__semibold">Python</span>
+        to <span class="container-three__semibold">TypeScript</span> and
         everything in between. Our discussions blend technical depth with practical applications.
       </p>
+      <picture class="container-three__img">
+        <source media="(min-width: 1440px)" srcset="./images/image-not-average-desktop.webp">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="./images/image-not-average-tablet.webp">
+        <source media="(max-width: 375px)" srcset="./images/image-not-average-mobile.webp">
+        <img src="./images/image-not-average-mobile.webp" alt="image-not-average">
+      </picture>
     </section>
 
     <section class="main__reading-journey">
-      Your tech reading journey
+      <h4>Your tech reading journey</h4>
       1
       Choose your membership tier
       2
@@ -106,28 +115,70 @@
       Attend exclusive meetups
     </section>
     <section class="main__membership">
-      Membership options
-      Starter
-      $19/month
-      1 book/month
-      Online forums
-      Subscribe now
-      Pro
-      $29/month
-      2 books/month
-      Virtual meetups
-      Subscribe now
-      Enterprise
-      Custom
-      Team access
-      Private sessions
-      Talk to us
+      <h5 class="membership__title">Membership options</h5>
+      <div class="membership__option">
+        <p class="membership__option-name">Starter</p>
+        <p class="membership__option-price"><span class="membership__bold">$19</span>/month</p>
+        <hr>
+        <ul class="membership__option-list">
+          <li>
+            <img src="./images/icon-check.svg" alt="icon-check">
+            1 book/month
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="icon-check">
+            Online forums
+          </li>
+        </ul>
+        <a href="#" class="membership__option-cta">Subscribe now</a>
+      </div>
+      <div class="membership__option">
+        <p class="membership__option-name">Pro</p>
+        <p class="membership__option-price"><span class="membership__bold">$29</span>/month</p>
+        <hr>
+        <ul class="membership__option-list">
+          <li>
+            <img src="./images/icon-check.svg" alt="icon-check">
+            2 books/month
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="icon-check">
+            Virtual meetups
+          </li>
+        </ul>
+        <a href="#" class="membership__option-cta">Subscribe now</a>
+      </div>
+      <div class="membership__option">
+        <p class="membership__option-name">Enterprise</p>
+        <p class="membership__option-price"><span class="membership__bold">Custom</span></p>
+        <hr>
+        <ul class="membership__option-list">
+          <li>
+            <img src="./images/icon-check.svg" alt="icon-check">
+            Team access
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="icon-check">
+            Private sessions
+          </li>
+        </ul>
+        <a href="#" class="membership__option-cta">Talk to us</a>
+      </div>
     </section>
     <section class="main__testimonial">
-      "This book club transformed my technical reading from a solitary
-      activity into an enriching community experience. The discussions
-      are gold!"
-      Sarah Chen, Software Architect
+      <div class="testimonial__ratings">
+        <img src="./images/icon-star.svg" alt="icon-star">
+        <img src="./images/icon-star.svg" alt="icon-star">
+        <img src="./images/icon-star.svg" alt="icon-star">
+        <img src="./images/icon-star.svg" alt="icon-star">
+        <img src="./images/icon-star.svg" alt="icon-star">
+      </div>
+      <p class="testimonial__text">
+        "This book club transformed my technical reading from a solitary
+        activity into an enriching community experience. The discussions
+        are gold!"
+      </p>
+      <p class="testimonial__name">Sarah Chen, Software Architect</p>
     </section>
   </main>
 
