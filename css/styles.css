@@ -177,7 +177,8 @@ meter {
     --color-light-salmon-50: #fff5ef;
 
     --color-text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
-    --color-gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+    --color-gradient-1: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+    --color-gradient-2: linear-gradient(90deg, #385159 0%, #062630 100%);
 }
 
 html {
@@ -193,6 +194,7 @@ body {
     max-width: 375px;
     margin: 0 auto;
     min-height: 100vh;
+    background-color: var(--color-neutral-200);
 }
 
 .main__container-one {
@@ -288,6 +290,7 @@ body {
 
 .main__container-two {
     padding: 64px 16px;
+    background-color: var(--color-neutral-0);
 }
 
 .container-two__title {
@@ -329,6 +332,7 @@ body {
     padding: 0 16px;
     position: relative;
     overflow: hidden;
+    background-color: var(--color-neutral-0);
 }
 
 .container-three__title {
@@ -372,6 +376,7 @@ body {
 
 .main__membership {
     padding: 64px 16px 0;
+    background-color: var(--color-neutral-0);
 }
 
 .membership__title {
@@ -476,8 +481,8 @@ body {
 }
 
 .main__testimonial {
-    padding: 64px 16px 0;
-    margin-bottom: 64px;
+    padding: 64px 16px;
+    background-color: var(--color-neutral-0);
 }
 
 .testimonial__ratings {
@@ -505,11 +510,18 @@ body {
 }
 
 footer {
-    padding: 48px 16px 0;
+    background-color: var(--color-neutral-0);
+}
+
+.footer__container {
     background-image: url(../images/pattern-dark-bg.svg);
     background-repeat: no-repeat;
     background-color: var(--color-neutral-900);
     border-radius: 16px 16px 0 0;
+}
+
+.footer__text {
+    padding: 48px 16px 64px;
 }
 
 .footer__title {
@@ -543,7 +555,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 64px;
 }
 
 .footer__testimonial-img {
@@ -602,7 +613,6 @@ footer {
         background-repeat: repeat;
         position: relative;
         overflow: hidden;
-        margin-bottom: 80px;
     }
 
     .container-one__logo {
@@ -643,8 +653,7 @@ footer {
     }
 
     .main__container-two {
-        padding: 0 32px;
-        margin-bottom: 80px;
+        padding: 80px 32px 0;
     }
 
     .container-two__title {
@@ -661,8 +670,7 @@ footer {
     }
 
     .main__container-three {
-        padding: 0 32px;
-        margin-bottom: 80px;
+        padding: 80px 32px;
     }
 
     .container-three__title {
@@ -672,8 +680,8 @@ footer {
     }
 
     .container-three__circle-img {
-        top: 64px;
-        left: 180px;
+        top: 13.3%;
+        left: 23.5%;
         width: 21%;
     }
 
@@ -682,8 +690,7 @@ footer {
     }
 
     .main__membership {
-        padding: 0 32px;
-        margin-bottom: 80px;
+        padding: 80px 32px 0;
     }
 
     .membership__title {
@@ -719,8 +726,7 @@ footer {
     }
 
     .main__testimonial {
-        padding: 0 32px;
-        margin-bottom: 80px;
+        padding: 80px 32px 0;
     }
 
     .testimonial__text {
@@ -732,7 +738,11 @@ footer {
     }
 
     footer {
-        padding: 64px 32px 0;
+        padding: 80px 0 0;
+    }
+
+    .footer__text {
+        padding: 64px 32px;
     }
 
     .footer__title {
@@ -754,7 +764,7 @@ footer {
     }
 
     .footer__content {
-        padding: 24px 0;
+        padding: 24px 32px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -773,7 +783,6 @@ footer {
 
     .main__container-one {
         padding: 32px 135px 80px;
-        margin-bottom: 120px;
     }
 
     .container-one__logo {
@@ -805,8 +814,7 @@ footer {
     }
 
     .main__container-two {
-        padding: 0 135px;
-        margin-bottom: 120px;
+        padding: 120px 135px 0;
     }
 
     .container-two__desktop {
@@ -837,15 +845,14 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 135px;
-        margin-bottom: 120px;
+        padding: 120px 135px 0;
     }
 
     .main__container-three::before {
         content: '';
         background: url(../images/logos-tech.svg) no-repeat;
         position: absolute;
-        top: 67%;
+        top: 73%;
         left: 46.5%;
         width: 100%;
         height: 100%;
@@ -866,15 +873,22 @@ footer {
     }
 
     .container-three__circle-img {
-        top: 191px;
-        left: 284px;
+        top: 313px;
+        left: 285px;
         width: 11%;
     }
 
     .main__reading-journey {
+        padding: 120px 135px 0;
+        background-color: var(--color-neutral-0);
+        display: block;
+
+    }
+
+    .reading-journey__bg-container {
         padding: 80px 0;
         width: 1170px;
-        margin: 0 auto 120px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -882,19 +896,19 @@ footer {
         background-color: var(--color-neutral-100);
         background-size: cover;
         background-position: 135px 0;
+        border-radius: 12px;
         position: relative;
         overflow: hidden;
-        border-radius: 12px;
     }
 
-    .main__reading-journey::before {
+    .reading-journey__bg-container::before {
         content: '';
         background: url(../images/pattern-glow.svg) no-repeat;
         width: 684px;
         height: 684px;
         position: absolute;
-        top: -19%;
-        right: -6%;
+        top: -15%;
+        right: 0;
     }
 
     .reading-journey__title {
@@ -950,8 +964,7 @@ footer {
     }
 
     .main__membership {
-        padding: 0 135px;
-        margin-bottom: 120px;
+        padding: 120px 135px 0;
     }
 
     .membership__title {
@@ -979,8 +992,7 @@ footer {
     }
 
     .main__testimonial {
-        padding: 0 135px;
-        margin-bottom: 120px;
+        padding: 120px 135px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -992,4 +1004,38 @@ footer {
         width: 970px;
     }
 
+    footer {
+        padding: 120px 0 0;
+        width: 1440px;
+    }
+
+    .footer__text {
+        padding: 80px 135px 64px;
+    }
+
+    .footer__title {
+        width: 685px;
+        margin: 0 auto 40px;
+    }
+
+    .footer__content {
+        margin: 0 135px;
+        padding: 24px 0;
+    }
+
+    .hover:hover {
+        background: var(--color-gradient-1);
+        cursor: pointer;
+        outline: 2px solid var(--color-neutral-700);
+        outline-offset: 3px;
+        box-shadow: 0 0 0 4px #fff;
+    }
+
+    .footer__cta:hover {
+        background: var(--color-gradient-2);
+        cursor: pointer;
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+        box-shadow: 0 0 0 4px #000;
+    }
 }
